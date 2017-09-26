@@ -2,6 +2,8 @@ package com.tech.s.iraqiholidays.model;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
+
 public class PackInfo {
     @SerializedName("pid")
     private String pId;
@@ -49,8 +51,12 @@ public class PackInfo {
     private String image;
     @SerializedName("supplier_name")
     private String supplierName;
+    @SerializedName("days")
+    private ArrayList<PackInfo> days;
+    @SerializedName("hotels")
+    private ArrayList<Hotels> hotels;
 
-    public PackInfo(String pId, String pDetail, String dateAdded, String startDate, String endDate, String pFrom, String pTo, String fromCountry, String toCountry, String sid, String lastDateAp, String pCurrency, String pActive, String packageType, String cxlDeadline, String include, String notInclude, String requirements, String fw, String pPrice, String toName, String image, String supplierName) {
+    public PackInfo(String pId, String pDetail, String dateAdded, String startDate, String endDate, String pFrom, String pTo, String fromCountry, String toCountry, String sid, String lastDateAp, String pCurrency, String pActive, String packageType, String cxlDeadline, String include, String notInclude, String requirements, String fw, String pPrice, String toName, String image, String supplierName, ArrayList<PackInfo> days, ArrayList<Hotels> hotels) {
         this.pId = pId;
         this.pDetail = pDetail;
         this.dateAdded = dateAdded;
@@ -74,6 +80,8 @@ public class PackInfo {
         this.toName = toName;
         this.image = image;
         this.supplierName = supplierName;
+        this.days = days;
+        this.hotels = hotels;
     }
 
     public String getpId() {
@@ -166,5 +174,13 @@ public class PackInfo {
 
     public String getSupplierName() {
         return supplierName;
+    }
+
+    public ArrayList<PackInfo> getDays() {
+        return days;
+    }
+
+    public ArrayList<Hotels> getHotels() {
+        return hotels;
     }
 }

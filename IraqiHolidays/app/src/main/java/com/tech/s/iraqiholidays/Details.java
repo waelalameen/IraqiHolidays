@@ -1,5 +1,6 @@
 package com.tech.s.iraqiholidays;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -15,9 +16,11 @@ import com.tech.s.iraqiholidays.fragments.Description;
 import com.tech.s.iraqiholidays.fragments.Include;
 import com.tech.s.iraqiholidays.fragments.NotInclude;
 import com.tech.s.iraqiholidays.fragments.Requirements;
+import com.tech.s.iraqiholidays.services.Booking;
 
 public class Details extends AppCompatActivity {
     ViewPager viewPager;
+    String pid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,17 +31,18 @@ public class Details extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        String pid = getIntent().getExtras().getString("pid");
+        pid = getIntent().getExtras().getString("pid");
         String pImage = getIntent().getExtras().getString("p_image");
         String pName = getIntent().getExtras().getString("p_name");
         String pDetail = getIntent().getExtras().getString("p_detail");
+        String pPrice = getIntent().getExtras().getString("p_price");
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
 
         TabLayout tabLayout = (TabLayout)findViewById(R.id.main_tab);
 
         ViewPagerAdapter pagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        pagerAdapter.addFragments(new Description(pid, pImage, pName, pDetail), getString(R.string.description));
+        pagerAdapter.addFragments(new Description(pid, pImage, pName, pDetail, pPrice), getString(R.string.description));
         pagerAdapter.addFragments(new NotInclude(pid, pImage), getString(R.string.not_include));
         pagerAdapter.addFragments(new Include(pid, pImage), getString(R.string.include));
         pagerAdapter.addFragments(new Requirements(pid, pImage), getString(R.string.requirements));
@@ -63,7 +67,9 @@ public class Details extends AppCompatActivity {
         checkOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getApplicationContext(), Booking.class);
+                intent.putExtra("pid", pid);
+                startActivity(intent);
             }
         });
     }

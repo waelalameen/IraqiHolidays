@@ -72,7 +72,7 @@ public class Login extends AppCompatActivity {
         call.enqueue(new Callback<LoginInfo>() {
             @Override
             public void onResponse(@NonNull Call<LoginInfo> call, @NonNull Response<LoginInfo> response) {
-                Log.d("response", response.body().getId());
+                Log.d("response", response.body().getId() != null ? response.body().getId() : "NO");
 
                 if (response.isSuccessful()) {
                     SharedPreferences preferences = getSharedPreferences("sid_preferences", MODE_PRIVATE);
@@ -88,6 +88,12 @@ public class Login extends AppCompatActivity {
                 Log.d("error", t.getMessage());
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        //moveTaskToBack(true);
     }
 
     private void setFonts() {

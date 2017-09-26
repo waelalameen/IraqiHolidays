@@ -33,4 +33,14 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="checkout_button">التحقق من توفر الرحلة</string>
+    <string name="p_price_text">تبدا من :</string>
+    <string name="first_name_edit">الاسم الاول</string>
+    <string name="second_name_edit">الاسم الثاني</string>
+    <string name="date_label">تاريخ الحجز</string>
+    <string name="hotel_label">اختر الفندق</string>
+    <string name="single_label_text">غرفة مفردة</string>
+    <string name="double_label_text">غرفة ثنائية</string>
+    <string name="triple_label_text">غرفة ثلاثية</string>
+    <string name="prices_label_text">تفاصيل الاسعار</string>
+    <string name="continue_process_text">الاستمرار لاكمال الطلب</string>
 </resources>

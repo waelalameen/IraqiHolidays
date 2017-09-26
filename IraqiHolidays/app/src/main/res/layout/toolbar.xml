@@ -16,8 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
             android:background="@color/toolbarColor"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
             <!--android:theme="@style/AppTheme.PopupOverlay"-->
 
             <TextView
@@ -25,7 +25,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
-                android:textColor="@android:color/holo_green_light"/>
+                android:textSize="16sp"
+                android:layout_margin="15dp"
+                android:textColor="@android:color/holo_green_light" />
 
         </android.support.v7.widget.Toolbar>
 

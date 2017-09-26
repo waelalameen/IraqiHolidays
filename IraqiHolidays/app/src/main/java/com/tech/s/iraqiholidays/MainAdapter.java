@@ -95,6 +95,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyHolder> {
                     intent.putExtra("p_not_include", list.get(getLayoutPosition()).getNotInclude());
                     intent.putExtra("p_include", list.get(getLayoutPosition()).getInclude());
                     intent.putExtra("p_req", list.get(getLayoutPosition()).getRequirements());
+                    intent.putExtra("p_price", list.get(getLayoutPosition()).getpPrice());
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(intent);
                     break;
