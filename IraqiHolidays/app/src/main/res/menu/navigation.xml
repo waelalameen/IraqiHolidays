@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_desc"
+        android:icon="@drawable/ic_search"
+        android:title="@string/description" />
+
+    <item
+        android:id="@+id/navigation_not_include"
+        android:icon="@drawable/ic_search"
+        android:title="@string/not_include" />
+
+    <item
+        android:id="@+id/navigation_include"
+        android:icon="@drawable/ic_search"
+        android:title="@string/include" />
+
+    <item
+        android:id="@+id/navigation_requirements"
+        android:icon="@drawable/ic_search"
+        android:title="@string/requirements" />
+</menu>

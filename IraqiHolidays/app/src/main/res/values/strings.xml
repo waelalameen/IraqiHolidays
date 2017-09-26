@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Iraqi Holidays</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="email_text">البريد الالكتروني</string>
+    <string name="password_text">كلمة المرور</string>
+    <string name="recovery_text">نسيت كلمة المرور ؟ قم باستعادتها</string>
+    <string name="signup_title">حساب جديد</string>
+    <string name="first_name_text">الاسم الاول</string>
+    <string name="father_grandpa_text">اسم الاب و الجد</string>
+    <string name="phone_number_text">رقم الهاتف</string>
+    <string name="password2_text">تاكيد كلمة المرور</string>
+    <string name="gender_text">الجنس</string>
+    <string name="terms_conditions">اوافق على الأحكام والشروط</string>
+    <string name="action_signup">تسجيل الحساب</string>
+    <string name="female_text">انثى</string>
+    <string name="male_text">ذكر</string>
+    <string name="empty_fields_message">املىء جميع المعلومات رجاءا</string>
+    <string name="password_not_match_message">كلمات المرور غير متطابقة</string>
+    <string name="terms_service_message">لم تقم بالموافقة على الاحكام و الشروط</string>
+    <string name="invalid_email_message">البريد الالكتروني غير صالح</string>
+    <string name="invalid_phone_number">رقم الهاتف غير صالح</string>
+    <string name="register_text">تسجيل حساب جديد</string>
+    <string name="p_image">p_image</string>
+    <string name="add_to_cart">اضافة الى السلة</string>
+    <string name="details">التفاصيل ...</string>
+    <string name="action_search">search</string>
+    <string name="description">الوصف</string>
+    <string name="not_include">الرحلة لا تشمل</string>
+    <string name="include">الرحلة تشمل</string>
+    <string name="requirements">الوثائق</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="checkout_button">التحقق من توفر الرحلة</string>
+</resources>

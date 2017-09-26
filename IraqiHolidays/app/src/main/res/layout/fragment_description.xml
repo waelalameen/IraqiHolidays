@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tech.s.iraqiholidays.fragments.Description">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/p_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/p_image" />
+
+            <TextView
+                android:id="@+id/p_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/p_image"/>
+
+            <TextView
+                android:id="@+id/p_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/p_name"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
