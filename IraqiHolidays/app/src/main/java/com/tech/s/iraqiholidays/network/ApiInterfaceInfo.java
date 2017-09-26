@@ -5,9 +5,9 @@ import com.tech.s.iraqiholidays.model.PackInfo;
 import java.util.List;
 
 import retrofit2.Call;
-import retrofit2.http.GET;
+import retrofit2.http.POST;
 
 public interface ApiInterfaceInfo {
-    @GET("search_package_service.php")
+    @POST("search_package_service.php")
     Call<List<PackInfo>> getInfo();
 }

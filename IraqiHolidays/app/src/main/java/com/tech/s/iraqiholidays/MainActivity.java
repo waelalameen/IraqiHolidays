@@ -161,6 +161,7 @@ public class MainActivity extends AppCompatActivity  implements SearchView.OnQue
             @Override
             public void onFailure(@NonNull Call<List<PackInfo>> call, @NonNull Throwable t) {
                 Log.d("main_error", t.getMessage() != null ? t.getMessage() : "NO");
+                getInfo();
             }
         });
     }
