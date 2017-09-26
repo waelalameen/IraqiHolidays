@@ -12,7 +12,7 @@ public class ScrollingFABBehavior extends CoordinatorLayout.Behavior<FloatingAct
 
     public ScrollingFABBehavior(Context context, AttributeSet attrs) {
         super(context, attrs);
-        this.toolbarHeight = 15;
+        this.toolbarHeight = 10;
     }
 
     @Override
